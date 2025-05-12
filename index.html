@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio de Arquitectura</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    
+  <header>
+    <div class="logo">ARQ</div>
+    <nav>
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Diseño arquitectónico moderno y funcional</h1>
+    <p>Transformo espacios con creatividad, técnica y visión.</p>
+  </section>
+
+  <section id="sobre-mi" class="sobre-mi fade-in">
+    <h2>Sobre mí</h2>
+    <p>Soy un arquitecto apasionado por el diseño contemporáneo, con más de 10 años de experiencia en proyectos residenciales y comerciales.</p>
+  </section>
+
+  <section id="proyectos" class="proyectos fade-in">
+    <h2>Proyectos destacados</h2>
+    <div class="galeria">
+      <div class="proyecto">Proyecto 1</div>
+      <div class="proyecto">Proyecto 2</div>
+      <div class="proyecto">Proyecto 3</div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto fade-in">
+    <h2>Contacto</h2>
+    <form action="mailto:contacto@arquitecto.com" method="POST" enctype="text/plain">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Arq. Juan Pérez. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
